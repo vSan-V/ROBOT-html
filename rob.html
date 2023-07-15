@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: black;
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+}
+.container{
+    height: 600px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 5%;
+    border: 2px solid red;
+}
+.face{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    background: chartreuse;
+    margin-top: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: width 1s ease;
+}
+.container:hover .face{
+    animation: face 0.5s infinite;
+}
+@keyframes face{
+    0%{
+        transform: translateX(20px) ;
+    }
+    25%{
+        transform: translateY(-20px) ;
+    }
+    50%{
+        transform: translateY(-20px) ;
+    }
+    75%{
+        transform: translateY(-20px) ;
+    }
+    100%{
+        transform: translateX(20px) ;
+    }
+}
+.eyes{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+.leye{
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 50px; 
+}
+.container:hover .leye{
+    animation: leye 1s infinite;
+}
+@keyframes leye{
+    0%{
+        height: 0px;
+        background: violet;
+    }
+    25%{
+        height: 30px;
+        background: green;
+    }
+    50%{
+        height: 0px;
+        background: yellow;
+    }
+    75%{
+        height: 30px;
+        background: blue;
+    }
+    100%{
+        height: 0px;
+        background: red;
+    }
+}
+.reye{
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 50px;
+}
+.container:hover .reye{
+    animation: reye 1s infinite;
+}
+@keyframes reye{
+    0%{
+        height: 0px;
+        background: violet;
+    }
+    25%{
+        height: 30px;
+        background: green;
+    }
+    50%{
+        height: 0px;
+        background: yellow;
+    }
+    75%{
+        height: 30px;
+        background: blue;
+    }
+    100%{
+        height: 0px;
+        background: red;
+    }
+}
+.body{
+    display: flex;
+    margin: auto;
+    width: 250px;
+    justify-content:space-around;
+}
+.larms{
+    height: 90px;
+    width: 25px;
+    background: chartreuse; 
+    margin-top: 30px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.container:hover .larms{
+    animation: larms 1s infinite;
+}
+@keyframes larms{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+.cbody{
+   width: 150px;
+   height: 150px;    
+   background: chartreuse;
+   border-bottom-left-radius: 30%;
+   border-bottom-right-radius: 30%;
+   margin-top: 8px;
+}
+.container:hover .cbody{
+    animation: cbody 0.5s infinite;
+}
+@keyframes cbody{
+    0%{
+        transform: translatey(-20px) ;
+        background: wheat;
+    }
+    25%{
+        transform: translatex(20px) ;
+        background:red;
+    }
+    50%{
+        transform: translatex(-20px) ;
+        background: white;
+    }
+    75%{
+        transform: translatex(20px) ;
+        background: red;
+    }
+    100%{
+        transform: translatey(-20px) ;
+        background: white;
+    }
+}
+.rarms{
+    height: 90px;
+    width: 25px;
+    background: chartreuse; 
+    margin-top: 30px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.container:hover .rarms{
+    animation: rarms 1s infinite;
+}
+@keyframes rarms{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+.leg
+{
+    display: flex;
+    margin: auto;
+    width: 170px;
+    justify-content:space-around;
+}
+.ll
+{
+    height: 90px;
+    width: 25px;
+    background: chartreuse; 
+    margin-top: 10px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.container:hover .ll{
+    animation: ll 1s infinite;
+}
+@keyframes ll{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+.rl{
+    height: 90px;
+    width: 25px;
+    background: chartreuse; 
+    margin-top: 10px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.container:hover .rl{
+    animation: rl 1s infinite;
+}
+@keyframes rl{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:red;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Dancing Robot</h1>
+    <div class="container">
+        <div class="face">
+            <div class="eyes">
+            <div class="leye"></div>
+            <div class="reye"></div>
+            </div>
+        </div>
+    <div class="body">
+        <div class="larms"></div>
+        <div class="cbody"></div>
+        <div class="rarms"></div>
+    </div>
+    <div class=leg>
+        <div class="ll"></div>
+        <div class="rl"></div>
+    </div>
+    </div>
+</body>
+</html>
